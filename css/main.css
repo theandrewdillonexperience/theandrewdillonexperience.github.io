@@ -15,7 +15,7 @@ a {
 }
 
 a:hover {
-  color: #445577;
+  text-shadow: 2px 0 #f0c, -3px 0 #0ff;
 }
 
 .list-inline-item {
@@ -50,7 +50,7 @@ a:hover {
 .glitch {
   position: relative;
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 4rem;
   padding: 20px;
   margin: 0 auto;
