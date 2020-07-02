@@ -37,6 +37,14 @@ a:hover {
   .glitch {
     font-size: 3rem !important;
   }
+  
+  .glitch:after {
+    left: 1px;
+  }
+
+  .glitch:before {
+    left: -1px;
+  }
 }
 
 .glitch {
