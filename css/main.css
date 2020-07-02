@@ -39,11 +39,11 @@ a:hover {
   }
   
   .glitch:after {
-    left: 1px;
+    left: 1px !important;
   }
 
   .glitch:before {
-    left: -1px;
+    left: -1px !important;
   }
 }
 
