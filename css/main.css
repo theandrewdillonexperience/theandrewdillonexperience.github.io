@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#main-logo {
+  margin: 50px;
+  margin-top: 120px;
+  max-height: 500px;
+}
+
+a {
+  color: unset;
+}
+
+a:hover {
+  color: #445577;
+}
+
+.list-inline-item {
+  color: #222 !important;
+  font-size: 2rem;
+  padding: 8px;
+}
+
+@media (max-width: 450px) {
+  #main-logo {
+    margin-top: 40%;
+  }
+}
