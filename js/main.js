@@ -13,7 +13,7 @@ function cycleLogo() {
 }
 
 (function loop() {
-  var interval = Math.round(Math.random() * 400) + 25;
+  var interval = Math.round(Math.random() * 300) + 50;
   setTimeout(function() {
     cycleLogo();
     loop();  
