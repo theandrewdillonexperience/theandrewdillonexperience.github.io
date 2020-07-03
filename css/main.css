@@ -15,7 +15,7 @@ a {
 }
 
 a:hover {
-  animation: link-anim 0.7s infinite linear alternate-reverse; 
+  animation: link-anim 3s infinite linear alternate-reverse; 
 }
 
 @keyframes link-anim {
