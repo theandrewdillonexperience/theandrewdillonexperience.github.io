@@ -15,7 +15,21 @@ a {
 }
 
 a:hover {
-  text-shadow: 2px 0 #f0c, -3px 0 #0ff;
+  animation: link-anim 0.7s infinite linear alternate-reverse; 
+}
+
+@keyframes link-anim {
+  0% { text-shadow: 2px 1px #f0f, 2px -3px #0ff; } 
+  10% { text-shadow: -3 2px #f0f, -3px -1px #0ff; } 
+  20% { text-shadow: -2px -2px #f0f, 1px 3px #0ff; } 
+  30% { text-shadow: 2px -3px #f0f, -2px -1px #0ff; } 
+  40% { text-shadow: -3px -2px #f0f, 2px -3px #0ff; } 
+  50% { text-shadow: -3px -3px #f0f, -3px -3px #0ff; } 
+  60% { text-shadow: 1px 1px #f0f, 3px -2px #0ff; } 
+  70% { text-shadow: -2px -3px #f0f, 2px 3px #0ff; } 
+  80% { text-shadow: 1px 3px #f0f, -1px -1px #0ff; } 
+  90% { text-shadow: -1px 2px #f0f, -1px 1px #0ff; } 
+  100% { text-shadow: -2px -3px #f0f, 1px 3px #0ff; } 
 }
 
 .list-inline-item {
