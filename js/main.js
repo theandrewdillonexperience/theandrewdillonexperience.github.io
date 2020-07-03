@@ -1,21 +1,41 @@
 const SOURCES = [
+  "assets/logo0_no_text.svg",
   "assets/logo1_no_text.svg",
-  "assets/logo2_no_text.svg",
   "assets/logo3_no_text.svg",
   "assets/logo4_no_text.svg",
   "assets/logo5_no_text.svg"
 ];
+const MAX_FLICKERS = 4;
+const STATIC_LOGO = "assets/logo2_no_text.svg";
+
+var logo = document.getElementById("main-logo");
+var reps = 0;
+var numFlickers = 1;
 
 function cycleLogo() {
   var index = Math.floor(Math.random() * SOURCES.length);
-  var logo = document.getElementById("main-logo");
   logo.src = SOURCES[index];
 }
 
-(function loop() {
-  var interval = Math.round(Math.random() * 300) + 50;
+function innerLoop() {
+  if (reps >= numFlickers) {
+    reps = 0;
+    logo.src = STATIC_LOGO;
+    return;
+  }
+  reps++;
+  var interval = Math.round(Math.random() * 100) + 30;
   setTimeout(function() {
     cycleLogo();
-    loop();  
+    innerLoop();  
+  }, interval);
+};
+
+(function outerLoop() {
+  var interval = Math.floor(Math.random() * 4000) + 3000;
+  numFlickers = Math.floor(Math.random() * MAX_FLICKERS) + 6;
+  setTimeout(function() {
+    innerLoop();
+    outerLoop();
   }, interval);
 }());
