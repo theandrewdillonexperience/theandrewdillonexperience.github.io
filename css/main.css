@@ -65,11 +65,13 @@ a:hover {
   }
   
   .glitch:after {
-    left: 1px !important;
+    left: 2px !important;
+    text-shadow: -1px 0 #f0c !important; 
   }
 
   .glitch:before {
-    left: -1px !important;
+    left: -2px !important;
+    text-shadow: 1px 0 #0ff !important; 
   }
 }
 
