@@ -24,7 +24,7 @@ function innerLoop() {
     return;
   }
   reps++;
-  var interval = Math.round(Math.random() * 100) + 30;
+  var interval = Math.round(Math.random() * 100) + 50;
   setTimeout(function() {
     cycleLogo();
     innerLoop();  
