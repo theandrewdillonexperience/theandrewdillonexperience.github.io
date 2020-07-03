@@ -75,7 +75,7 @@ a:hover {
 .glitch {
   position: relative;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 4rem;
   padding-top: 20px;
   margin: 0 auto;
@@ -109,15 +109,15 @@ a:hover {
 .glitch:after { 
   content: attr(data-text); 
   position: absolute; 
-  left: 2px; 
-  text-shadow: -1px 0 #f0c; 
+  left: 3px; 
+  text-shadow: -1px -1px #f0c; 
   top: 0; 
   background: white; 
   overflow: hidden; 
   height: 100%;
   width: 100%;
   clip: rect(0, 900px, 0, 0); 
-  animation: noise-anim 3s infinite cubic-bezier(.25, .46, .45, .94) alternate-reverse; 
+  animation: noise-anim 4s infinite linear alternate-reverse; 
   padding-top: 20px;
   margin: 0 auto;
 } 
@@ -149,13 +149,13 @@ a:hover {
 .glitch:before { 
   content: attr(data-text); 
   position: absolute; 
-  left: -2px; 
-  text-shadow: 1px 0 #0ff; 
+  left: -3px; 
+  text-shadow: 1px 1px #0ff; 
   top: 0; 
   background: white; 
   overflow: hidden; 
   clip: rect(0, 900px, 0, 0); 
-  animation: noise-anim-2 3s infinite cubic-bezier(.25, .46, .45, .94) alternate-reverse; 
+  animation: noise-anim-2 4s infinite linear alternate-reverse; 
   height: 100%;
   width: 100%;
   padding-top: 20px;

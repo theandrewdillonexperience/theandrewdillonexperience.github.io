@@ -32,8 +32,8 @@ function innerLoop() {
 };
 
 (function outerLoop() {
-  var interval = Math.floor(Math.random() * 4000) + 3000;
-  numFlickers = Math.floor(Math.random() * MAX_FLICKERS) + 6;
+  var interval = Math.floor(Math.random() * 6000) + 4000;
+  numFlickers = Math.floor(Math.random() * MAX_FLICKERS) + 5;
   setTimeout(function() {
     innerLoop();
     outerLoop();
