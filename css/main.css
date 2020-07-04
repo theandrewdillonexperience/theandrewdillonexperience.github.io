@@ -119,7 +119,7 @@ a:hover {
   height: 100%;
   width: 100%;
   clip: rect(0, 900px, 0, 0); 
-  animation: noise-anim 4s infinite linear alternate-reverse; 
+  animation: noise-anim 2.5s infinite alternate-reverse; 
   padding-top: 20px;
   margin: 0 auto;
 } 
@@ -157,7 +157,7 @@ a:hover {
   background: white; 
   overflow: hidden; 
   clip: rect(0, 900px, 0, 0); 
-  animation: noise-anim-2 4s infinite linear alternate-reverse; 
+  animation: noise-anim-2 2.5s infinite alternate-reverse; 
   height: 100%;
   width: 100%;
   padding-top: 20px;
