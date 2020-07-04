@@ -65,10 +65,12 @@ a:hover {
   
   .glitch:after {
     left: 2px !important;
+    text-shadow: 0 -1px #f0c !important; 
   }
 
   .glitch:before {
     left: -2px !important;
+    text-shadow: 0 1px #0ff !important; 
   }
 }
 
