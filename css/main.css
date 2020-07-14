@@ -10,9 +10,23 @@ body {
   padding: 0;
 }
 
+#support {
+  padding-top: 20px;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+#support > a {
+  color: #f0c;
+}
+
+#support > a:hover {
+  animation: unset;
+}
+
 .tagline {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1.5rem;
   padding-bottom: 20px;
 }
