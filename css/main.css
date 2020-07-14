@@ -16,12 +16,13 @@ body {
   font-size: 1.2rem;
 }
 
-#support > a {
+.support-link {
   color: #f0c;
 }
 
-#support > a:hover {
-  animation: unset;
+.support-link:hover {
+  animation: none !important;
+  color: #f0c;
 }
 
 .tagline {
