@@ -12,16 +12,17 @@ body {
 
 #support {
   padding-top: 20px;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1.2rem;
 }
 
-#support > a {
+.support-link {
   color: #f0c;
 }
 
-#support > a:hover {
-  animation: unset;
+.support-link:hover {
+  animation: none !important;
+  color: #f0c;
 }
 
 .tagline {
@@ -62,6 +63,10 @@ a:hover {
 @media (max-width: 450px) {
   #main-logo {
     margin-top: 15vh;
+  }
+
+  #support {
+    font-size: 1rem;
   }
 
   .tagline {
