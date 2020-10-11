@@ -8,28 +8,29 @@ body {
   max-height: 400px;
   min-height: 200px;
   padding: 0;
+  border-radius: 50%;
+}
+
+#logo-text {
+  margin-top: 20px;
+  width: min(1000px, 90vw);
 }
 
 #support {
-  padding-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 18px;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .support-link {
-  color: #f0c;
+  color: #00caaa;
+  font-weight: 700;
 }
 
 .support-link:hover {
   animation: none !important;
-  color: #f0c;
-}
-
-.tagline {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
-  padding-bottom: 20px;
+  color: #fa8208;
 }
 
 a {
@@ -37,21 +38,22 @@ a {
 }
 
 a:hover {
+  color: black;
   animation: link-anim 3s infinite linear alternate-reverse; 
 }
 
 @keyframes link-anim {
-  0% { text-shadow: 2px 1px #f0f, 2px -3px #0ff; } 
-  10% { text-shadow: -3 2px #f0f, -3px -1px #0ff; } 
-  20% { text-shadow: -2px -2px #f0f, 1px 3px #0ff; } 
-  30% { text-shadow: 2px -3px #f0f, -2px -1px #0ff; } 
-  40% { text-shadow: -3px -2px #f0f, 2px -3px #0ff; } 
-  50% { text-shadow: -3px -3px #f0f, -3px -3px #0ff; } 
-  60% { text-shadow: 1px 1px #f0f, 3px -2px #0ff; } 
-  70% { text-shadow: -2px -3px #f0f, 2px 3px #0ff; } 
-  80% { text-shadow: 1px 3px #f0f, -1px -1px #0ff; } 
-  90% { text-shadow: -1px 2px #f0f, -1px 1px #0ff; } 
-  100% { text-shadow: -2px -3px #f0f, 1px 3px #0ff; } 
+  0% { text-shadow: 2px 1px #00daba, 2px -3px #fa8202; } 
+  10% { text-shadow: -3 2px #00daba, -3px -1px #fa8202; } 
+  20% { text-shadow: -2px -2px #00daba, 1px 3px #fa8202; } 
+  30% { text-shadow: 2px -3px #00daba, -2px -1px #fa8202; } 
+  40% { text-shadow: -3px -2px #00daba, 2px -3px #fa8202; } 
+  50% { text-shadow: -3px -3px #00daba, -3px -3px #fa8202; } 
+  60% { text-shadow: 1px 1px #00daba, 3px -2px #fa8202; } 
+  70% { text-shadow: -2px -3px #00daba, 2px 3px #fa8202; } 
+  80% { text-shadow: 1px 3px #00daba, -1px -1px #fa8202; } 
+  90% { text-shadow: -1px 2px #00daba, -1px 1px #fa8202; } 
+  100% { text-shadow: -2px -3px #00daba, 1px 3px #fa8202; } 
 }
 
 .list-inline-item {
@@ -62,15 +64,11 @@ a:hover {
 
 @media (max-width: 450px) {
   #main-logo {
-    margin-top: 15vh;
+    margin-top: 10vh;
   }
 
   #support {
     font-size: 1rem;
-  }
-
-  .tagline {
-    font-size: 1.2rem; 
   }
 
   .list-inline-item {
@@ -131,7 +129,7 @@ a:hover {
   content: attr(data-text); 
   position: absolute; 
   left: 3px; 
-  text-shadow: -1px -1px #f0c; 
+  text-shadow: -1px -1px #00daba; 
   top: 0; 
   background: white; 
   overflow: hidden; 
@@ -171,7 +169,7 @@ a:hover {
   content: attr(data-text); 
   position: absolute; 
   left: -3px; 
-  text-shadow: 1px 1px #0ff; 
+  text-shadow: 1px 1px #fa8208; 
   top: 0; 
   background: white; 
   overflow: hidden; 
