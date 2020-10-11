@@ -12,13 +12,13 @@ body {
 }
 
 #logo-text {
-  margin-top: 20px;
+  margin: 15px 0;
   width: min(1000px, 90vw);
 }
 
 #support {
+  margin: 15px 0;
   font-family: "Montserrat", sans-serif;
-  padding-top: 18px;
   font-weight: 300;
   font-size: 1.5rem;
 }
@@ -56,6 +56,10 @@ a:hover {
   100% { text-shadow: -2px -3px #00daba, 1px 3px #fa8202; } 
 }
 
+.list-inline {
+  margin: auto;
+}
+
 .list-inline-item {
   color: #222 !important;
   font-size: 2rem;
@@ -71,9 +75,12 @@ a:hover {
     font-size: 1rem;
   }
 
+  .list-inline {
+    width: 60vw;
+  }
+
   .list-inline-item {
-    font-size: 1.5rem;
-    padding: 8px 20px;
+    font-size: 1.8rem;
   }
 
   .glitch {
